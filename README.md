@@ -1,4 +1,4 @@
 client-hub
 ==========
 
-A client hub built using backbone and node.
+A client hub built using ember and node.

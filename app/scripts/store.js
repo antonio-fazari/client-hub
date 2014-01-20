@@ -1,0 +1,1 @@
+ClientHub.ApplicationAdapter = DS.FixtureAdapter;
