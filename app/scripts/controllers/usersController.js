@@ -1,4 +1,4 @@
-App.UsersController = Ember.ArrayController.extend({
+ClientHub.UsersController = Ember.ArrayController.extend({
   sortProperties: ['name'],
   sortAscending: true, // false = descending
   usersCount: function(){
