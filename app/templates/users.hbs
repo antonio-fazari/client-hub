@@ -1,0 +1,9 @@
+<ul class="users-listing">
+  {{#each user in controller}}
+    <li>{{user.name}}</li>
+  {{else}}
+    <li>no users… :-(</li>
+  {{/each}}
+</ul>
+
+<div>Users: {{usersCount}}</div>
