@@ -3,5 +3,18 @@
   <h2>{{name}}</h2>
   <span>{{email}}</span>
   <p>{{bio}}</p>
-  <span>Created {{creationDate}}</span>
+  <span>Created {{formatDate creationDate}}</span>
 </div>
+
+<button {{action "edit"}}>Edit</button>
+<button {{action "delete"}}>Delete</button>
+
+{{#if deleteMode}}
+<div class="confirm-box">
+  <h4>Really?</h4>
+  <button {{action "confirmDelete"}}> yes </button>
+  <button {{action "cancelDelete"}}> no </button>
+</div>
+{{/if}}
+
+{{outlet}}
